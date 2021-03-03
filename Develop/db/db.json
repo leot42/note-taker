@@ -1,1 +1,1 @@
-{"notes": [{"title":"Test Title","text":"Test text"}], "totalNoteCount": "0"}
+{"notes": [{"id":"0","title":"Test Title","text":"Test text"}], "nextNewId": "1"}
