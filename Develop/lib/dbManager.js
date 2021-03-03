@@ -1,6 +1,7 @@
 const dataStore = require('../db/db.json');
 const path = require('path');
-const dataLocation = path
+const fs = require('fs');
+const dataLocation = path.join(__dirname, '../db/db.json');
 const noteList = dataStore.notes;
 //const fs = require('fs').
 // const nextNewId = dataStore.nextNewId;
@@ -20,13 +21,32 @@ const noteList = dataStore.notes;
             then trigger file save every so often
 */
 
-function addRecord(note) {
-    let nextNewId = dataStore.nextNewId;
-    f
+    static class DbManager {
+    #dataLocation;
+    #dataStore;
+
+    constructor() {
+        this.#dataLocation = path.join(__dirname, '../db/db.json');
+        this.#dataStore = require('../db/db.json');
+        
+    }
+
+    addRecord(note) {
+        note.id = this.#dataStore.nextNewId;
+        this.#dataLocation.nextNewId++;
+        this.#dataStore.noteList
+        fs.writeFile(
+            this.dataLocation, 
+            JSON.stringify(this.#dataStore, null, 2)
+        );
+        return this.getAllRecords();
+    }
+    
+    deleteRecord(id);
+    
+    getAllRecords() {
+        return this.#dataStore.noteList;
+    }
 }
 
-function deleteRecord(id);
-
-function getAllRecords() {
-
-}
+module.exports = DbManager;
