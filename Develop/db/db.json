@@ -1,29 +1,27 @@
 {
-  "dataStore": {
     "db": {
-      "notes": [
-        {
-          "id": 1,
-          "title": "Test Title",
-          "text": "Test text"
-        },
-        {
-          "id": 1,
-          "title": " lkjn s kj",
-          "text": "niubnsvd"
-        },
-        {
-          "id": 2,
-          "title": " lkjn s kj",
-          "text": "niubnsvd"
-        },
-        {
-          "title": "vyhvu",
-          "text": "vig",
-          "id": 3
-        }
-      ],
-      "nextNewId": 4
+        "notes": [
+            {
+                "id": 0,
+                "title": "Test Title",
+                "text": "Test text"
+            },
+            {
+                "id": 1,
+                "title": " lkjn s kj",
+                "text": "niubnsvd"
+            },
+            {
+                "id": 2,
+                "title": " lkjn s kj",
+                "text": "niubnsvd"
+            },
+            {
+                "title": "vyhvu",
+                "text": "vig",
+                "id": 3
+            }
+        ],
+        "nextNewId": 4
     }
-  }
 }
