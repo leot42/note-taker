@@ -18,7 +18,7 @@ router.delete('/notes/:id', (req, res) => {
             // console.log(` map note check ${JSON.stringify(note)}`);
     // } )
     console.log(` filtered id check ${JSON.stringify(dataStore)}`);
-    
+
     saveBackToJsonFile();
 
     res.send(200);
@@ -45,7 +45,7 @@ router.post('/notes', (req, res) => {
 function saveBackToJsonFile () {
     fs.writeFileSync(
         dataLocation,
-        JSON.stringify(dataStore.db, null, 2));
+        JSON.stringify(dataStore, null, 2));
 }
 
 module.exports = router;
