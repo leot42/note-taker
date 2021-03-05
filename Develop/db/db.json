@@ -1,1 +1,20 @@
-{"notes": [{"id":"0","title":"Test Title","text":"Test text"}], "nextNewId": 1}
+{
+  "db": {
+    "notes": [
+      {
+        "id": "0",
+        "title": "Test Title",
+        "text": "Test text"
+      },
+      {
+        "title": " lkjn s kj",
+        "text": "niubnsvd"
+      },
+      {
+        "title": " lkjn s kj",
+        "text": "niubnsvd"
+      }
+    ],
+    "nextNewId": 1
+  }
+}

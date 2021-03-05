@@ -1,5 +1,8 @@
+const fs = require('fs');
+const path = require('path'); 
 const router = require('express').Router();
 const db = require('../../db/db.json');
+const dataLocation = path.join(__dirname, '../../db/db.json');
 
 router.delete('/notes/:id', (req, res) => {
     console.log(`api delete notes ${JSON.stringify(req.params)}`);
@@ -16,8 +19,12 @@ router.get('/notes', (req, res) => {
 router.post('/notes', (req, res) => {
     console.log(`api post notes ${db.notes}`);
     console.log(JSON.stringify(req.body));
+    db.notes.push(req.body);
 
-    // add to db.json
+    fs.writeFileSync(
+        dataLocation,
+        JSON.stringify({ db }, null, 2));
+    
 });
 
 
