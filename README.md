@@ -25,8 +25,8 @@ Requires node and the ability to use npm install to pull down the node dependenc
 
 ## Contact Me
 
-By [E-mail](https://townsendlione@gmail.com)
-or by [Github](https://leot42).
+By [E-mail](mailto:https://townsendlionel@gmail.com)
+or by [Github](https://github.com/leot42).
 
 ## Usage
 
